@@ -4,12 +4,12 @@ from .views import *
 
 urlpatterns = [
     path('home/', base, {'name': 'Home'}, name='home'),
-    path('company/', base, {'name': 'Markets'}, name='markets'),
-    path('development/', base, {'name': 'Platforms'}, name='platforms'),
-    path('development/cpp', base, {'name': 'Mt4'}, name='mt4'),
-    path('development/cpp/qt', base, {'name': 'Download'}, name='download'),
-    path('development/python', base, {'name': 'Mt5'}, name='mt5'),
-    path('development/python/django', base, {'name': 'Desktop'}, name='desktop'),
-    path('development/python/tornado', base, {'name': 'Phone'}, name='phone'),
+    path('markets/', base, {'name': 'Markets'}, name='markets'),
+    path('platforms/', base, {'name': 'Platforms'}, name='platforms'),
+    path('platforms/mt4', base, {'name': 'Mt4'}, name='mt4'),
+    path('platforms/mt4/download', base, {'name': 'Download'}, name='download'),
+    path('platforms/mt5', base, {'name': 'Mt5'}, name='mt5'),
+    path('platforms/mt5/desktop', base, {'name': 'Desktop'}, name='desktop'),
+    path('platforms/mt5/phone', base, {'name': 'Phone'}, name='phone'),
     path('prices/', base, {'name': 'Investment'}, name='investment'),
 ]
